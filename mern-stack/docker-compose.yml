@@ -1,0 +1,12 @@
+version : '3'
+
+services:
+  app :
+    container_name: numerical-tnp
+    restart: always
+    build: .
+      dockerfile: DockerFile
+    ports:
+      - '8080:3000'
+    volumes:
+     - ./app:/numer-app
